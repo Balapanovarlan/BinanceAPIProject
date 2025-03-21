@@ -1,49 +1,47 @@
-.container{
-    display: grid;
-    align-items: center;
-    grid-template-columns: 3fr 1fr 1fr;
-}
-
-.tokenName{
+.tokenName {
     display: flex;
     align-items: center;
     gap: 0.4rem;
-    
-}
-
-.shortName , .fullName, .price , .changeValue{
+  }
+  
+  .shortName,
+  .fullName,
+  .price,
+  .changeValue {
     font-size: 1.2rem;
-}
-
-.fullName{
+  }
+  
+  .fullName {
     opacity: 0.8;
-}
-
-.price{
-    color: #9292C1;
-}
-
-.change{
+  }
+  
+  .price {
+    color: #9292c1;
+  }
+  
+  .change {
     display: flex;
     gap: 1rem;
     align-items: center;
-
-}
-
-.changeValue{
+    justify-content: end;
+    
+  }
+  
+  .changeValue {
     font-weight: 600;
-}
-
-.changeIcon {
+  }
+  
+  .changeIcon {
     width: 1.2rem;
-}
-
-.up{
+  }
+  
+  .up {
     color: green;
     transform: rotate(90deg);
-}
-
-.down{
+  }
+  
+  .down {
     color: red;
     transform: rotate(-90deg);
-}
+  }
+  

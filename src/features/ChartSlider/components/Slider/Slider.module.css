@@ -10,10 +10,9 @@
         rgba(40, 32, 55) 100%
     );
     border-radius: 25px;
-    padding: 1.7rem 1.7rem 0rem 1.7rem;
+    padding: 2.5rem 1.7rem 0rem 1.7rem;
     gap: 10px;
     position: relative;
-    overflow: visible;
 }
 
 .cardHeader{
@@ -55,8 +54,14 @@
 
 .tokenIcon{
     position: absolute;
-    top: -22px;
+    top: -25px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+    background-color: var(--colors__accent);
+    border-radius: 100%;
+}
+
+.swiper{
+    padding-top: 2.5rem;
 }

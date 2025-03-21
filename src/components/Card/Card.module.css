@@ -7,7 +7,7 @@
     padding: 3rem 3.2rem;
     position: relative;
     background: linear-gradient(75deg, #2A0FD3 10%,  #FF7A7A 56%);
-    
+    overflow: hidden;
 }
 
 .text{

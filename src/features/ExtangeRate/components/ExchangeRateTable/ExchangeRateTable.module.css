@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
@@ -6,19 +6,24 @@
     border-radius: 20px;
     padding: 1.7rem 2.4rem 2.4rem;
     max-width: 27rem;
-}
-
-.heading{
+  }
+  
+  .heading {
     font-size: 1.8rem;
     font-weight: 700;
-}
-
-.tableHeader{
+  }
+  
+  .table {
     display: grid;
-    align-items: center;
     grid-template-columns: 3fr 1fr 1fr;
-}
-
-.headerItem{
+    row-gap: 1.2rem; /* Расстояние между строками */
+    align-items: center;
+  }
+  
+  .tableHeader {
     font-size: 1rem;
-}
+    font-weight: 600;
+    display: contents; 
+  }
+  
+  

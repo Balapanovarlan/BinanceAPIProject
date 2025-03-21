@@ -16,10 +16,9 @@ import { ArrowLeftRightIcon, CircleArrowDown, CircleArrowUp } from 'lucide-react
 import styles from './Slider.module.css';
 import { useQuery } from '@tanstack/react-query';
 import { coinIcons } from '../../../../constants/coinIcons';
+import { tokenList } from '../../../ExtangeRate/api/ExchangeRate.data';
 
 SwiperCore.use([Autoplay, FreeMode, Navigation]);
-
-const cryptoPairs = ['BTCUSDT', 'ETHUSDT', 'LTCUSDT', 'BNBUSDT', 'CAKEUSDT', 'ADAUSDT'];
 
 const Slider = () => {
   const [charts, setCharts] = useState([]);
@@ -33,7 +32,7 @@ const Slider = () => {
   useEffect(() => {
     const loadCharts = async () => {
       const results = await Promise.all(
-        cryptoPairs.map(async (pair) => {
+        tokenList.map(async (pair) => {
           const chartData = await fetchBinanceChartData(pair);
           return { pair, chartData };
         })
@@ -83,6 +82,7 @@ const Slider = () => {
       slidesPerView={5}
       freeMode
       loop
+      className={styles.swiper}
     >
       {mergedData.map((item, index) => {
         const isPositive = parseFloat(item.priceChangePercent) >= 0;
@@ -96,7 +96,7 @@ const Slider = () => {
         );
 
         return (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} >
             <div className={styles.card}>
               <div className={styles.cardHeader}>
                 <div className={styles.pair}>
