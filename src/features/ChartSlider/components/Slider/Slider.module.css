@@ -1,0 +1,62 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #625c6d;
+    backdrop-filter: blur(140px);
+    background: linear-gradient(
+        153deg,
+        rgba(64, 57, 77) 0%,
+        rgba(40, 32, 55) 100%
+    );
+    border-radius: 25px;
+    padding: 1.7rem 1.7rem 0rem 1.7rem;
+    gap: 10px;
+    position: relative;
+    overflow: visible;
+}
+
+.cardHeader{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.pair{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #868B93;
+}
+
+.change{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.cardBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.price{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tokenIcon{
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}

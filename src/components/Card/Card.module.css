@@ -1,0 +1,117 @@
+.container{
+    display: flex;
+    width: 630px;
+    height: 289px ;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 3rem 3.2rem;
+    position: relative;
+    background: linear-gradient(75deg, #2A0FD3 10%,  #FF7A7A 56%);
+    
+}
+
+.text{
+    display: flex;
+    max-width: 226px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.7rem;
+
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sub__header{
+    margin: 0;
+}
+
+.main__header{
+    display: flex;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 100%;
+    color: white;
+    
+}
+
+.pr{
+    font-size: 1.4rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4.3rem;
+}
+
+.btn{
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background-color: #261B4C;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1.2rem 2.5rem 1.2rem 2.5rem;
+}
+
+.decor{
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.decor-1{
+    width: 10.6rem;
+    height: 120px;
+    top: 95px;
+    right: 220px; 
+    /* transform: rotate(0deg); */
+    background-image: url('../../assets/images/card/Pill-Blue-Glossy.png');
+}
+
+.decor-2{
+    width: 12.4rem;
+    height: 4rem;
+    bottom: 0; 
+    right: 120px; 
+    background-image: url('../../assets/images/card/Sphere-Purple-Glossy.png');
+}
+
+.decor-3{
+    width: 19.4rem;
+    height: 15.5rem;
+    top: 89px; 
+    right: 32px; 
+    background-image: url('../../assets/images/card/prisma.png');
+}
+
+.decor-4{
+    width: 9.8rem;
+    height: 8.3rem;
+    top: 0; 
+    right: 0; 
+    background-image: url('../../assets/images/card/RoundCube-Iridescent.png');
+}
+
+.decor-5{
+    width: 13.3rem;
+    height: 11.7rem;
+    top: 0; 
+    right: 120px; 
+    background-image: url('../../assets/images/card/SuperToroid-Black-Matte.png');
+}
+
+.decor-6{
+    width: 22.8rem;
+    height: 14rem;
+    bottom: 0; 
+    right: -85px; 
+    background-image: url('../../assets/images/card/white.png');
+}

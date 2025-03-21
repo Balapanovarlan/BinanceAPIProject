@@ -5,13 +5,14 @@
         rgba(64, 57, 77) 0%,
         rgba(40, 32, 55) 100%
     );
-    display: flex;
-    flex-direction: column-reverse;
     border-radius: 25px;
     border: 0.2rem solid #625c6d;
     justify-content: center;
+    
 }
 
 .chart {
-    padding: 2.5rem;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
 }

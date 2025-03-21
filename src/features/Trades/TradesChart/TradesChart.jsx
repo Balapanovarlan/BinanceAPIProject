@@ -1,11 +1,9 @@
 import React from 'react';
 import { getTradesApi } from '../api/GetTrades/GetTrades';
 import { useQuery } from '@tanstack/react-query';
-import ChartI from '../../../components/Chart/Chart';
+import Chart from '../../../components/Chart/Chart';
 import styles from './TradesChart.module.css'
-// import { CategoryScale, Chart } from 'chart.js';
 
-// Chart.register(CategoryScale);
 
 const TradesChart = () => {
     const { data: tradesData, isLoading: isTradesDataLoading } = useQuery({
@@ -63,11 +61,11 @@ const TradesChart = () => {
 
     return (
         <div>
-            <div className={styles.header}>
-                <ChartI 
+            <div className={styles.container}>
+                <Chart
                     data={chartData}
                     options={chartOptions}
-                    size='medium'
+                    size='large'
                 />
             </div>
         </div>
