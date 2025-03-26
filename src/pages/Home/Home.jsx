@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom'
 import { PageRoutes } from '../../constants/PageRoutes'
 
 const Home = () => {
-    const {address } = useWeb3();
+    const {address, sendETH } = useWeb3();
 
     const navigate = useNavigate();
 
@@ -34,6 +34,7 @@ const Home = () => {
             <div>
             <ExchangeRateTable />
             </div>
+            <button onClick={()=> sendETH('0x25ADD8C269f36648CdB07AE0271Bf1a3f8DE28Ac','0.001')}>Send</button>
         </div>
     )
 }

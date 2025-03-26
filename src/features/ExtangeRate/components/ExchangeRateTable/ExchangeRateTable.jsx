@@ -13,7 +13,7 @@ const ExchangeRateTable = () => {
     if(isLoading){
         return 'loading'
     }
-    console.log(data);
+
     return (
     <div className={styles.container}>
         <h4 className={styles.heading}>Marker trend</h4>
