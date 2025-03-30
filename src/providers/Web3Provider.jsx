@@ -6,6 +6,7 @@ import {
 } from '@rainbow-me/rainbowkit';
 import { createConfig, WagmiProvider } from 'wagmi';
 import {
+    mainnet,
     sepolia,
 } from 'wagmi/chains';
 import {

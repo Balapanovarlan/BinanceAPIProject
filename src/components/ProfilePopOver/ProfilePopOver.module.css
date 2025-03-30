@@ -1,0 +1,87 @@
+.popover {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #40394E;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 240px;
+    z-index: 100;
+  }
+  
+  .profileInfo {
+    border-bottom: 1px solid #5B546A;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .addressRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .addressRow:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+  
+  .address {
+    font-family: monospace;
+    font-size: 1.4rem;
+    color: #BB7FF5;
+  }
+  
+  .copyIcon {
+    color: #9080BA;
+  }
+  
+  .copiedText {
+    font-size: 1.4rem;
+    color: #6A5ACD;
+    margin-left: auto;
+  }
+  
+  .balance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .balanceLabel {
+    color: #9080BA;
+    font-size: 1.4rem;
+  }
+  
+  .balanceValue {
+    color: #F0E6FF;
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+  
+  .disconnectButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    color: #FF6B6B;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1.4rem;
+  }
+  
+  .disconnectButton:hover {
+    background: rgba(255, 107, 107, 0.1);
+  }
+  
+  .disconnectIcon {
+    stroke-width: 2px;
+  }
