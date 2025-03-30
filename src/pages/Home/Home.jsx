@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import TradesChart from '../../features/Trades/TradesChart/TradesChart'
 import ExchangeRateTable from '../../features/ExtangeRate/components/ExchangeRateTable/ExchangeRateTable'
 import Card from '../../components/Card/Card'
@@ -7,11 +7,20 @@ import Slider from '../../features/ChartSlider/components/Slider/Slider'
 import { useWeb3 } from '../../hooks/useWeb3/useWeb3'
 import { useNavigate } from 'react-router-dom'
 import { PageRoutes } from '../../constants/PageRoutes'
+import Transfer from '../../components/Transfer/Transfer'
+import Child from './Child'
 
 const Home = () => {
-    const {address, sendETH } = useWeb3();
+    const {address} = useWeb3();
 
     const navigate = useNavigate();
+
+    const [count, setCount] = useState(0);
+
+    const handleClick = useCallback(()=>{
+        console.log('click');
+        setCount(prev => prev+1);
+    },[])
 
     useEffect(()=>{
         if(!address){
@@ -31,10 +40,10 @@ const Home = () => {
             <div>
                 <Slider />
             </div>
-            <div>
-            <ExchangeRateTable />
+            <div className={styles.bottom_cards}>
+                <ExchangeRateTable />
+                <Transfer />
             </div>
-            <button onClick={()=> sendETH('0x25ADD8C269f36648CdB07AE0271Bf1a3f8DE28Ac','0.001')}>Send</button>
         </div>
     )
 }

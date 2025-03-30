@@ -24,6 +24,29 @@
     font-size: 1rem;
     font-weight: 600;
     display: contents; 
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+
+.headerItem {
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
+
+  .headerItem:hover{
+    border-color: white;
   }
   
-  
+  .filterAsc{
+    color: green;
+    transform: rotate(180deg);
+  }
+
+  .filterHide{
+    visibility: hidden;
+  }
+
+  .filterIcon{
+    width: 2rem;
+    height: 2rem;
+  }

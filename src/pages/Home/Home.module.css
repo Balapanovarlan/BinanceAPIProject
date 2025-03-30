@@ -11,3 +11,9 @@
     justify-content: center;
     gap: 2.1rem;
 }
+
+.bottom_cards{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
